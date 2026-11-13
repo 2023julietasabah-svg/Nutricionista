@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutricionista - Asistente de Vida Saludable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor-principal">
+    <!-- Parte 1 del boceto: zona de chat -->
+    <section id="zona-de-chat" class="zona-de-chat" aria-label="zona de chat" aria-live="polite">
+      <div class="mensaje agente">
+        <p>¡Hola! Soy Nutricionista, tu asistente para armar una vida saludable. Contame cuáles son tus objetivos o qué te gustaría mejorar hoy.</p>
+      </div>
+    </section>
+
+    <!-- Parte 2 del boceto: zona de escritura -->
+    <form id="zona-de-escritura" class="zona-de-escritura" aria-label="zona de escritura">
+      <textarea
+        id="campo-mensaje"
+        maxlength="500"
+        rows="3"
+        placeholder="Escribí tu consulta sobre alimentación o hábitos (máx. 500 caracteres)..."
+        aria-label="Escribir mensaje"
+        required
+      ></textarea>
+      <div class="barra-inferior">
+        <span id="contador-caracteres" class="contador">0 / 500</span>
+        <button type="submit" id="boton-enviar">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Carga obligatoria de config.js antes de script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
